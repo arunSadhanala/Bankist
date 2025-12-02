@@ -250,14 +250,14 @@ accsContainer.classList.add("translate");
 btnLogin.addEventListener("click", function (e) {
   // Prevents default reload when the form is submitted
   e.preventDefault();
-
-  accsContainer.classList.remove("translate");
-
+  
   currentAccount = accounts.find(
     (acc) => acc.userName === inputLoginUsername.value
   );
 
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
+    accsContainer.classList.remove("translate");
+    
     // Display UI and message
     labelWelcome.textContent = `Welcome back, ${
       currentAccount.owner.split(" ")[0]
@@ -395,3 +395,4 @@ btnSort.addEventListener("click", function (e) {
   displayMovements(currentAccount, !sorted);
   sorted = !sorted;
 });
+
