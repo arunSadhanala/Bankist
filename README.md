@@ -14,8 +14,6 @@ Welcome to Bankist, a sophisticated, pure JavaScript web application that simula
 
 - Data Sorting: Ability to sort transactions (movements) by amount.
 
-- Sticky Navigation & Visual Effects: Uses the Intersection Observer API to implement a sticky navigation bar, lazy load images, and reveal sections as they scroll into view.
-
 - Logout Timer: Automatic logout after a period of inactivity.
 
 
